@@ -165,24 +165,36 @@
         }
 
         async function fetchBook(isbn) {
-            try {
-                const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}&key=AIzaSyAolcX8ulJIMWy_Od6eXPTGOPDRmQt9siM`);
-                const data = await response.json();
-                const key = `ISBN:${isbn}`;
+    try {
+        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}&key=AIzaSyAolcX8ulJIMWy_Od6eXPTGOPDRmQt9siM`);
+        const data = await response.json();
 
-                if (data[key]) {
-                    const book = {
-                        ...data[key],
-                        isbn: isbn,
-                        searchString: `${data[key].title} ${data[key].authors ? data[key].authors.map(a => a.name).join(' ') : ''}`.toLowerCase()
-                    };
-                    loadedBooks.push(book);
-                    renderBook(book);
-                }
-            } catch (error) {
-                console.warn(`Error con ISBN ${isbn}:`, error);
-            }
+        if (data.totalItems > 0) {
+            const info = data.items[0].volumeInfo;
+
+            const book = {
+                isbn: isbn,
+                title: info.title || "Sin título",
+                authors: info.authors || [],
+                publishers: info.publisher ? [info.publisher] : [],
+                publish_date: info.publishedDate || "",
+                description: info.description || "",
+                cover: {
+                    medium: info.imageLinks?.thumbnail || "",
+                    large: info.imageLinks?.thumbnail || ""
+                },
+                url: info.infoLink || "",
+                searchString: `${info.title || ""} ${(info.authors || []).join(" ")}`.toLowerCase()
+            };
+
+            loadedBooks.push(book);
+            renderBook(book);
         }
+
+    } catch (error) {
+        console.warn(`Error con ISBN ${isbn}:`, error);
+    }
+}
 
         function renderBook(book) {
             const coverUrl = book.cover ? book.cover.medium : 'https://via.placeholder.com/180x260?text=Sin+Portada';
