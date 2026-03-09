@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISBN Book Gallery</title>
+    <title>Mi Catálogo Personal de Libros</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Librería para leer archivos Excel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <style>
         .book-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -23,208 +21,258 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen font-sans">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-10">
-        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <h1 class="text-2xl font-bold text-gray-800">📚 Mi Biblioteca ISBN</h1>
-            
-            <div class="flex items-center gap-3">
-                <label class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg cursor-pointer transition-colors flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    <!-- Header & Search -->
+    <header class="bg-white shadow-sm sticky top-0 z-20">
+        <div class="max-w-6xl mx-auto px-4 py-4 md:py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <h1 class="text-2xl font-bold text-gray-800">📚 Mi Catálogo</h1>
+                
+                <div class="relative w-full md:w-96">
+                    <input type="text" id="searchInput" placeholder="Buscar por título o autor..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                    <svg class="absolute left-3 top-2.5 h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    Cargar Excel
-                    <input type="file" id="excelInput" accept=".xlsx, .xls" class="hidden">
-                </label>
+                </div>
+
+                <div id="stats" class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100">
+                    Iniciando...
+                </div>
             </div>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-8">
-        <!-- Estado Inicial / Instrucciones -->
-        <div id="initialState" class="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200">
-            <div class="mb-4 text-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                </svg>
-            </div>
-            <h2 class="text-xl font-medium text-gray-700">Selecciona un archivo Excel para comenzar</h2>
-            <p class="text-gray-500 mt-2">La columna A debe contener los códigos ISBN</p>
+        <!-- Loader Screen -->
+        <div id="loadingIndicator" class="flex flex-col items-center justify-center py-12">
+            <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-10 w-10 mb-4"></div>
+            <p id="loadingStatus" class="text-gray-500 text-sm">Cargando colección...</p>
         </div>
 
-        <!-- Loader -->
-        <div id="loading" class="hidden flex flex-col items-center justify-center py-20">
-            <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
-            <p id="loadingStatus" class="text-gray-600 font-medium">Procesando ISBNs...</p>
-        </div>
-
-        <!-- Galería de Libros -->
+        <!-- Gallery -->
         <div id="gallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <!-- Los libros se insertarán aquí dinámicamente -->
+            <!-- Dinámico -->
+        </div>
+
+        <!-- Empty State Search -->
+        <div id="noResults" class="hidden text-center py-20">
+            <p class="text-gray-400 text-lg">No se encontraron libros que coincidan con tu búsqueda.</p>
         </div>
     </main>
 
-    <!-- Modal de Detalles -->
-    <div id="bookModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative p-6 md:p-8">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <!-- Modal -->
+    <div id="bookModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 p-2 bg-gray-100 rounded-full text-gray-500 hover:text-gray-800 transition-colors z-10">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <div id="modalContent" class="flex flex-col md:flex-row gap-8">
-                <!-- Se rellena dinámicamente -->
-            </div>
+            <div id="modalContent" class="p-6 md:p-10"></div>
         </div>
     </div>
 
     <script>
-        const excelInput = document.getElementById('excelInput');
-        const initialState = document.getElementById('initialState');
-        const loading = document.getElementById('loading');
-        const loadingStatus = document.getElementById('loadingStatus');
+        // Lista de ISBNs extraídos de la imagen
+        const ISBN_DATA = [
+            "9788416213825", "9786073101493", "9789686941722", "9780764979873", "9789504914723",
+            "9789870413622", "9789871210466", "9788484504740", "9789507317279", "9789707702004",
+            "9789686005660", "9786073844703", "9788433968012", "9788433981219", "9789871673018",
+            "9789507314926", "9789507427695", "9789507222115", "9788496136595", "9789501522587",
+            "9789871210886", "9789870436270", "9788471662613", "9789684111813", "9788417977825",
+            "9789685146463", "9789870419730", "9789504913504", "9788478951246", "98797677",
+            "9788483106280", "9789870409526", "9789500427456", "9789877693645", "9789870413318",
+            "9789876283489", "9789877362275", "9789872514020", "9788433970831", "9788478445455",
+            "9789876706285", "9879588231", "9786078969623", "9788441407039", "9789504922568",
+            "9789505151547", "9789874198075", "9789876281294", "9789507313219", "9789875780651",
+            "9789878319315", "9789875780668", "9789872514051", "9789870408338", "9788420634159",
+            "9788420634166", "9788426416131", "9786078126064", "9789877832075", "9789875661547",
+            "9789500745871", "9789500715430", "9789878928241", "9788471662644", "9788435008419",
+            "9789875802087", "9789878000992", "9789507320552", "9789506202781", "9788492915347",
+            "9789507319983", "9788433968845", "9789706991416", "9789501501575", "9789500402453",
+            "9788483109984", "9789561311930", "9789877181623", "9789876283380", "9788433975416",
+            "9788439721246", "9788433902351", "9789587584837", "9788472239722", "9789868167895",
+            "9789685208581", "9788433972903", "9788433975683", "9788483076033", "9789870406099",
+            "9788401497438", "9788426411488", "9788433968524", "9788433971012", "9789500401005",
+            "9789507398896", "9788433997760", "9789870425281", "9786079790004", "9788433971432",
+            "6131690770981", "9789871210138", "9788483100035", "9786075025025", "9789506446888",
+            "9789879397367", "9788433911148", "9788433974860", "9789871210084", "9789871210299",
+            "9788433972149", "9788432234897", "9788433976550", "9786073806251", "9789504935537",
+            "9788495587107", "9789875662308", "9789688673324", "9789500427814", "9789500434034",
+            "9789871739141", "9789871556083", "9789870409885", "9788433909480", "9789871544493",
+            "9788417977429", "9788416830732", "9789875454712", "9789504905578", "9789705800061",
+            "9789682993367", "9788433998163", "9789871677818", "9789877690248", "9786074213133",
+            "9789974811812", "9789500427555", "9788433966568", "9788498383034", "9788433920423",
+            "9789871544080", "9788472238626", "9789500427890", "9789708120357", "9789877120738",
+            "9789500429535", "9788493711054", "9788483100585", "9788483108871", "9789509779662",
+            "9788433972736", "9789500716178", "9788433911186", "9789872627805", "9789876092562",
+            "9789875801387", "9789681677886", "9789876700115", "9789504990949", "9789507865381",
+            "9788498388800", "9788433906991", "9786077341581", "9789706990655", "9789507312724",
+            "9789876282444", "9789684114432", "9783822835333", "9789872483036", "9789974908925",
+            "9783836531733", "9789871180400", "9786074110142", "9789687711416", "9788466306539",
+            "9789501514681", "9789686941623", "9788433981080", "9789871180523", "9788433966636",
+            "9789688107355", "9788483100813", "9788433968838", "9788420482453", "9500810263",
+            "9788415130352", "9788483109144", "9504911102", "9789505117574", "9788433998057",
+            "9788495971814", "9788433535122", "9789500429092", "9789877381863", "9788498381764",
+            "9789500307727", "9788426421395", "9789877387827", "9788483106020", "9789507927878",
+            "9789500399043", "9789876700351", "9782711836550", "9788476098707", "9788419089052",
+            "9788420470566", "9789877381887", "9781984822185", "9789874159427", "9789509009059",
+            "9788433972811", "9788433980397", "9788483831441", "9789500729314", "9786078667291",
+            "9783836507752", "9789871544394", "9789505576289", "9788419243324", "9788476694701",
+            "9788488730022", "9789871768011", "9788433967664", "9788417007584", "9788433972216",
+            "9789871177219", "9789876092104", "9788433914835", "9789871920976", "9789877382570",
+            "9789870731033", "9788433914828", "9788426316387", "9789875001053", "9789507426511",
+            "9789507542673", "9788433931580", "9788477651604", "9788433980229", "9786316598066",
+            "9789871081332", "9789878000565", "40259182221759"
+        ];
+
+        let loadedBooks = [];
         const gallery = document.getElementById('gallery');
-        const bookModal = document.getElementById('bookModal');
-        const modalContent = document.getElementById('modalContent');
+        const loadingScreen = document.getElementById('loadingIndicator');
+        const searchInput = document.getElementById('searchInput');
+        const stats = document.getElementById('stats');
+        const noResults = document.getElementById('noResults');
 
-        let booksData = [];
+        // Inicializar app
+        window.addEventListener('DOMContentLoaded', startCatalog);
 
-        excelInput.addEventListener('change', handleFile);
-
-        function handleFile(e) {
-            const file = e.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = function(evt) {
-                const data = evt.target.result;
-                const workbook = XLSX.read(data, { type: 'binary' });
-                const firstSheetName = workbook.SheetNames[0];
-                const worksheet = workbook.Sheets[firstSheetName];
-                
-                // Convertir a JSON
-                const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-                
-                // Extraer ISBNs de la Columna A (ignorando vacíos y encabezados si no son números)
-                const isbns = json
-                    .map(row => String(row[0]).trim())
-                    .filter(val => val && val !== 'undefined' && val.match(/[0-9xX]{10,13}/));
-
-                if (isbns.length > 0) {
-                    processISBNs(isbns);
-                } else {
-                    alert('No se encontraron códigos ISBN válidos en la Columna A');
-                }
-            };
-            reader.readAsBinaryString(file);
-        }
-
-        async function processISBNs(isbns) {
-            initialState.classList.add('hidden');
-            gallery.classList.add('hidden');
-            loading.classList.remove('hidden');
-            gallery.innerHTML = '';
-            booksData = [];
-
-            let count = 0;
-            for (const isbn of isbns) {
-                count++;
-                loadingStatus.innerText = `Buscando libro ${count} de ${isbns.length}...`;
-                
-                try {
-                    const response = await fetch(`https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&format=json&jscmd=data`);
-                    const data = await response.json();
-                    const key = `ISBN:${isbn}`;
-
-                    if (data[key]) {
-                        const book = data[key];
-                        booksData.push(book);
-                        renderBookThumbnail(book);
-                    }
-                } catch (error) {
-                    console.error(`Error con ISBN ${isbn}:`, error);
-                }
-            }
-
-            loading.classList.add('hidden');
-            gallery.classList.remove('hidden');
+        async function startCatalog() {
+            stats.innerText = `Cargando 0 de ${ISBN_DATA.length}`;
             
-            if (booksData.length === 0) {
-                initialState.classList.remove('hidden');
-                alert('No se pudo encontrar información para los ISBNs proporcionados.');
+            // Procesar en bloques para no saturar el navegador pero permitir vista rápida
+            const batchSize = 10;
+            for (let i = 0; i < ISBN_DATA.length; i += batchSize) {
+                const batch = ISBN_DATA.slice(i, i + batchSize);
+                await Promise.all(batch.map(isbn => fetchBook(isbn)));
+                
+                // Ocultar loader una vez que tenemos los primeros libros
+                if (i === 0) {
+                    loadingScreen.classList.add('hidden');
+                    gallery.classList.remove('hidden');
+                }
+                
+                stats.innerText = `Libros: ${loadedBooks.length} / ${ISBN_DATA.length}`;
+            }
+            stats.classList.replace('bg-blue-50', 'bg-green-50');
+            stats.classList.replace('text-blue-600', 'text-green-600');
+        }
+
+        async function fetchBook(isbn) {
+            try {
+                const response = await fetch(`https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&format=json&jscmd=data`);
+                const data = await response.json();
+                const key = `ISBN:${isbn}`;
+
+                if (data[key]) {
+                    const book = {
+                        ...data[key],
+                        isbn: isbn,
+                        searchString: `${data[key].title} ${data[key].authors ? data[key].authors.map(a => a.name).join(' ') : ''}`.toLowerCase()
+                    };
+                    loadedBooks.push(book);
+                    renderBook(book);
+                }
+            } catch (error) {
+                console.warn(`Error con ISBN ${isbn}:`, error);
             }
         }
 
-        function renderBookThumbnail(book) {
+        function renderBook(book) {
             const coverUrl = book.cover ? book.cover.medium : 'https://via.placeholder.com/180x260?text=Sin+Portada';
             const authors = book.authors ? book.authors.map(a => a.name).join(', ') : 'Autor desconocido';
 
             const card = document.createElement('div');
-            card.className = 'book-card bg-white p-2 rounded-xl shadow-sm cursor-pointer';
+            card.className = 'book-card bg-white p-3 rounded-2xl shadow-sm cursor-pointer border border-gray-100 flex flex-col';
+            card.dataset.isbn = book.isbn;
             card.innerHTML = `
-                <div class="aspect-[2/3] overflow-hidden rounded-lg bg-gray-100 mb-3">
-                    <img src="${coverUrl}" alt="${book.title}" class="w-full h-full object-cover">
+                <div class="aspect-[2/3] overflow-hidden rounded-xl bg-gray-50 mb-4">
+                    <img src="${coverUrl}" alt="${book.title}" class="w-full h-full object-cover" loading="lazy">
                 </div>
-                <h3 class="text-sm font-bold text-gray-800 line-clamp-2 leading-tight">${book.title}</h3>
-                <p class="text-xs text-gray-500 mt-1 truncate">${authors}</p>
+                <h3 class="text-sm font-bold text-gray-800 line-clamp-2 leading-tight mb-1 grow">${book.title}</h3>
+                <p class="text-[11px] text-gray-500 truncate uppercase tracking-tight font-medium">${authors}</p>
             `;
             
             card.onclick = () => showDetails(book);
             gallery.appendChild(card);
         }
 
+        // Buscador en tiempo real
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            document.querySelectorAll('.book-card').forEach(card => {
+                const isbn = card.dataset.isbn;
+                const book = loadedBooks.find(b => b.isbn === isbn);
+                
+                if (book && book.searchString.includes(term)) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            noResults.classList.toggle('hidden', visibleCount > 0 || term === '');
+        });
+
         function showDetails(book) {
-            const coverUrl = book.cover ? book.cover.large : 'https://via.placeholder.com/300x450?text=Sin+Portada';
+            const coverUrl = book.cover ? book.cover.large : 'https://via.placeholder.com/400x600?text=Sin+Portada';
             const authors = book.authors ? book.authors.map(a => a.name).join(', ') : 'Autor desconocido';
-            const publishers = book.publishers ? book.publishers.map(p => p.name).join(', ') : 'N/A';
-            const pages = book.number_of_pages ? `${book.number_of_pages} páginas` : 'Páginas no especificadas';
+            const publishers = book.publishers ? book.publishers.map(p => p.name).join(', ') : 'Información no disponible';
 
-            modalContent.innerHTML = `
-                <div class="w-full md:w-1/3 flex-shrink-0">
-                    <img src="${coverUrl}" alt="${book.title}" class="w-full rounded-xl shadow-lg">
-                </div>
-                <div class="w-full md:w-2/3">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-2 leading-tight">${book.title}</h2>
-                    <p class="text-xl text-blue-600 font-medium mb-6">${authors}</p>
-                    
-                    <div class="grid grid-cols-1 gap-4 text-sm text-gray-600">
-                        <div class="flex flex-col border-b border-gray-100 pb-2">
-                            <span class="font-bold text-gray-400 uppercase tracking-wider text-[10px]">Publicado por</span>
-                            <span class="text-gray-800 text-base">${publishers}</span>
-                        </div>
-                        <div class="flex flex-col border-b border-gray-100 pb-2">
-                            <span class="font-bold text-gray-400 uppercase tracking-wider text-[10px]">Año de publicación</span>
-                            <span class="text-gray-800 text-base">${book.publish_date || 'Desconocido'}</span>
-                        </div>
-                        <div class="flex flex-col border-b border-gray-100 pb-2">
-                            <span class="font-bold text-gray-400 uppercase tracking-wider text-[10px]">Identificadores</span>
-                            <span class="text-gray-800 font-mono text-sm">${Object.entries(book.identifiers).map(([k,v]) => `${k.toUpperCase()}: ${v[0]}`).join(' | ')}</span>
-                        </div>
+            document.getElementById('modalContent').innerHTML = `
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="w-full md:w-5/12">
+                        <img src="${coverUrl}" class="w-full rounded-2xl shadow-2xl border border-gray-100">
                     </div>
+                    <div class="w-full md:w-7/12 py-2">
+                        <div class="mb-6">
+                            <h2 class="text-3xl font-extrabold text-gray-900 leading-tight mb-3">${book.title}</h2>
+                            <p class="text-xl text-blue-600 font-semibold italic">${authors}</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 gap-5">
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <span class="block text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">Editorial</span>
+                                <span class="text-gray-800 font-medium">${publishers}</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <span class="block text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">Año de edición</span>
+                                <span class="text-gray-800 font-medium">${book.publish_date || 'N/A'}</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-2xl">
+                                <span class="block text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">ISBN</span>
+                                <span class="text-gray-800 font-mono text-sm tracking-tighter">${book.isbn}</span>
+                            </div>
+                        </div>
 
-                    <div class="mt-8 flex gap-4">
-                        <a href="${book.url}" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors inline-block">
-                            Ver en Open Library
-                        </a>
+                        <div class="mt-10">
+                            <a href="${book.url}" target="_blank" class="w-full text-center inline-block bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform active:scale-95">
+                                Ver en Open Library
+                            </a>
+                        </div>
                     </div>
                 </div>
             `;
-            bookModal.classList.remove('hidden');
+            document.getElementById('bookModal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
-            bookModal.classList.add('hidden');
+            document.getElementById('bookModal').classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
 
-        // Cerrar modal al hacer clic fuera
-        bookModal.onclick = (e) => {
-            if (e.target === bookModal) closeModal();
+        window.onclick = (e) => {
+            if (e.target === document.getElementById('bookModal')) closeModal();
         };
     </script>
 </body>
