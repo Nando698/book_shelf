@@ -1,119 +1,212 @@
-<script>
-    let loadedBooks = [];
-    const gallery = document.getElementById('gallery');
-    const loadingScreen = document.getElementById('loadingIndicator');
-    const searchInput = document.getElementById('searchInput');
-    const stats = document.getElementById('stats');
-    const noResults = document.getElementById('noResults');
-
-    // Inicializar app
-    window.addEventListener('DOMContentLoaded', startCatalog);
-
-    async function startCatalog() {
-        try {
-            // 1. Cargamos el archivo JSON local
-            const response = await fetch('biblioteca.json');
-            if (!response.ok) throw new Error("No se pudo cargar el archivo JSON");
-            
-            const data = await response.json();
-            
-            // 2. Procesamos los datos para que sean compatibles con tu buscador
-            loadedBooks = data.map(book => ({
-                ...book,
-                // Creamos un string de búsqueda fácil
-                searchString: `${book.titulo} ${book.autores.join(' ')}`.toLowerCase()
-            }));
-
-            // 3. Renderizamos todo
-            renderGallery(loadedBooks);
-            
-            // 4. Actualizamos UI
-            loadingScreen.classList.add('hidden');
-            stats.innerText = `Libros: ${loadedBooks.length}`;
-            stats.classList.replace('bg-blue-50', 'bg-green-50');
-            stats.classList.replace('text-blue-600', 'text-green-600');
-
-        } catch (error) {
-            console.error("Error al iniciar el catálogo:", error);
-            document.getElementById('loadingStatus').innerText = "Error al cargar biblioteca.json. Asegurate de que el archivo esté en la misma carpeta.";
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Catálogo Personal de Libros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .book-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-    }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .loader {
+            border-top-color: #3498db;
+            border-left-color: #3498db;
+            animation: spinner 1s linear infinite;
+        }
+        @keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans">
 
-    function renderGallery(books) {
-        gallery.innerHTML = '';
-        books.forEach(book => renderBook(book));
-    }
-
-    function renderBook(book) {
-        const coverUrl = book.portada !== "Sin imagen" ? book.portada : 'https://via.placeholder.com/180x260?text=Sin+Portada';
-        const authors = book.autores.join(', ');
-
-        const card = document.createElement('div');
-        card.className = 'book-card bg-white p-3 rounded-2xl shadow-sm cursor-pointer border border-gray-100 flex flex-col';
-        card.innerHTML = `
-            <div class="aspect-[2/3] overflow-hidden rounded-xl bg-gray-50 mb-4">
-                <img src="${coverUrl}" alt="${book.titulo}" class="w-full h-full object-cover" loading="lazy">
-            </div>
-            <h3 class="text-sm font-bold text-gray-800 line-clamp-2 leading-tight mb-1 grow">${book.titulo}</h3>
-            <p class="text-[11px] text-gray-500 truncate uppercase tracking-tight font-medium">${authors}</p>
-        `;
-        
-        card.onclick = () => showDetails(book);
-        gallery.appendChild(card);
-    }
-
-    // Buscador optimizado
-    searchInput.addEventListener('input', (e) => {
-        const term = e.target.value.toLowerCase().trim();
-        const filtered = loadedBooks.filter(b => b.searchString.includes(term));
-        
-        // Renderizamos solo los filtrados
-        renderGallery(filtered);
-
-        // Mostrar/Ocultar mensaje de "no hay resultados"
-        noResults.classList.toggle('hidden', filtered.length > 0 || term === '');
-    });
-
-    function showDetails(book) {
-        const coverUrl = book.portada !== "Sin imagen" ? book.portada : 'https://via.placeholder.com/400x600?text=Sin+Portada';
-        const authors = book.autores.join(', ');
-
-        document.getElementById('modalContent').innerHTML = `
-            <div class="flex flex-col md:flex-row gap-10">
-                <div class="w-full md:w-5/12">
-                    <img src="${coverUrl}" class="w-full rounded-2xl shadow-2xl border border-gray-100">
+    <header class="bg-white shadow-sm sticky top-0 z-20">
+        <div class="max-w-6xl mx-auto px-4 py-4 md:py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <h1 class="text-2xl font-bold text-gray-800">📚 Mi Catálogo</h1>
+                
+                <div class="relative w-full md:w-96">
+                    <input type="text" id="searchInput" placeholder="Buscar por título o autor..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                    <svg class="absolute left-3 top-2.5 h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                 </div>
-                <div class="w-full md:w-7/12 py-2">
-                    <div class="mb-6">
-                        <h2 class="text-3xl font-extrabold text-gray-900 leading-tight mb-3">${book.titulo}</h2>
-                        <p class="text-xl text-blue-600 font-semibold italic">${authors}</p>
+
+                <div id="stats" class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100">
+                    Iniciando...
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <div id="loadingIndicator" class="flex flex-col items-center justify-center py-12">
+            <div class="loader ease-linear rounded-full border-4 border-gray-200 h-10 w-10 mb-4"></div>
+            <p id="loadingStatus" class="text-gray-500 text-sm">Cargando colección desde biblioteca.json...</p>
+        </div>
+
+        <div id="gallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 hidden">
+            </div>
+
+        <div id="noResults" class="hidden text-center py-20">
+            <p class="text-gray-400 text-lg">No se encontraron libros que coincidan con tu búsqueda.</p>
+        </div>
+    </main>
+
+    <div id="bookModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-4 right-4 p-2 bg-gray-100 rounded-full text-gray-500 hover:text-gray-800 transition-colors z-10">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div id="modalContent" class="p-6 md:p-10"></div>
+        </div>
+    </div>
+
+    <script>
+        // Variables de referencia para los elementos del DOM
+        let loadedBooks = [];
+        let gallery, loadingScreen, searchInput, stats, noResults, bookModal, modalContent;
+
+        // Esperar a que el HTML esté listo
+        window.addEventListener('DOMContentLoaded', () => {
+            // Asignar elementos
+            gallery = document.getElementById('gallery');
+            loadingScreen = document.getElementById('loadingIndicator');
+            searchInput = document.getElementById('searchInput');
+            stats = document.getElementById('stats');
+            noResults = document.getElementById('noResults');
+            bookModal = document.getElementById('bookModal');
+            modalContent = document.getElementById('modalContent');
+
+            // Iniciar proceso
+            startCatalog();
+            
+            // Configurar buscador
+            if (searchInput) {
+                searchInput.addEventListener('input', handleSearch);
+            }
+        });
+
+        async function startCatalog() {
+            try {
+                // Leer el JSON
+                const response = await fetch('biblioteca.json');
+                if (!response.ok) throw new Error("No se pudo leer biblioteca.json");
+                
+                const data = await response.json();
+                
+                // Normalizar datos para búsqueda
+                loadedBooks = data.map(book => ({
+                    ...book,
+                    searchString: `${book.titulo} ${Array.isArray(book.autores) ? book.autores.join(' ') : ''}`.toLowerCase()
+                }));
+
+                // Renderizar
+                renderGallery(loadedBooks);
+                
+                // Actualizar UI
+                if (loadingScreen) loadingScreen.classList.add('hidden');
+                if (gallery) gallery.classList.remove('hidden');
+                if (stats) {
+                    stats.innerText = `Libros: ${loadedBooks.length}`;
+                    stats.classList.replace('bg-blue-50', 'bg-green-50');
+                    stats.classList.replace('text-blue-600', 'text-green-600');
+                }
+
+            } catch (error) {
+                console.error("Error:", error);
+                const status = document.getElementById('loadingStatus');
+                if (status) status.innerText = "Error: biblioteca.json no encontrado o inaccesible.";
+            }
+        }
+
+        function renderGallery(books) {
+            if (!gallery) return;
+            gallery.innerHTML = '';
+            
+            books.forEach(book => {
+                const coverUrl = (book.portada && book.portada !== "Sin imagen") 
+                    ? book.portada.replace("http://", "https://") 
+                    : 'https://via.placeholder.com/180x260?text=Sin+Portada';
+                
+                const authors = Array.isArray(book.autores) ? book.autores.join(', ') : 'Autor desconocido';
+
+                const card = document.createElement('div');
+                card.className = 'book-card bg-white p-3 rounded-2xl shadow-sm cursor-pointer border border-gray-100 flex flex-col';
+                card.innerHTML = `
+                    <div class="aspect-[2/3] overflow-hidden rounded-xl bg-gray-50 mb-4">
+                        <img src="${coverUrl}" alt="${book.titulo}" class="w-full h-full object-cover" loading="lazy">
                     </div>
-                    
-                    <div class="grid grid-cols-1 gap-5">
+                    <h3 class="text-sm font-bold text-gray-800 line-clamp-2 leading-tight mb-1 grow">${book.titulo}</h3>
+                    <p class="text-[11px] text-gray-500 truncate uppercase tracking-tight font-medium">${authors}</p>
+                `;
+                
+                card.onclick = () => showDetails(book);
+                gallery.appendChild(card);
+            });
+        }
+
+        function handleSearch(e) {
+            const term = e.target.value.toLowerCase().trim();
+            const filtered = loadedBooks.filter(b => b.searchString.includes(term));
+            renderGallery(filtered);
+            if (noResults) noResults.classList.toggle('hidden', filtered.length > 0 || term === '');
+        }
+
+        function showDetails(book) {
+            const coverUrl = (book.portada && book.portada !== "Sin imagen") 
+                ? book.portada.replace("http://", "https://") 
+                : 'https://via.placeholder.com/400x600?text=Sin+Portada';
+                
+            const authors = Array.isArray(book.autores) ? book.autores.join(', ') : 'Autor desconocido';
+
+            modalContent.innerHTML = `
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="w-full md:w-5/12">
+                        <img src="${coverUrl}" class="w-full rounded-2xl shadow-2xl border border-gray-100">
+                    </div>
+                    <div class="w-full md:w-7/12 py-2">
+                        <div class="mb-6">
+                            <h2 class="text-3xl font-extrabold text-gray-900 leading-tight mb-3">${book.titulo}</h2>
+                            <p class="text-xl text-blue-600 font-semibold italic">${authors}</p>
+                        </div>
                         <div class="bg-gray-50 p-4 rounded-2xl">
                             <span class="block text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">ISBN</span>
                             <span class="text-gray-800 font-mono text-sm tracking-tighter">${book.isbn}</span>
                         </div>
-                    </div>
-
-                    <div class="mt-10">
-                        <a href="https://www.google.com/search?q=libro+${encodeURIComponent(book.titulo)}+${encodeURIComponent(authors[0])}" target="_blank" class="w-full text-center inline-block bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform active:scale-95">
-                            Buscar más información
-                        </a>
+                        <div class="mt-10">
+                            <a href="https://www.google.com/search?q=libro+${encodeURIComponent(book.titulo)}+${encodeURIComponent(authors)}" target="_blank" 
+                               class="w-full text-center inline-block bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform active:scale-95">
+                                Ver en Google
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `;
-        document.getElementById('bookModal').classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    }
+            `;
+            bookModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
 
-    function closeModal() {
-        document.getElementById('bookModal').classList.add('hidden');
-        document.body.style.overflow = 'auto';
-    }
+        // Funciones del Modal
+        window.closeModal = function() {
+            if (bookModal) {
+                bookModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
 
-    window.onclick = (e) => {
-        if (e.target === document.getElementById('bookModal')) closeModal();
-    };
-</script>
+        window.onclick = (e) => {
+            if (e.target === bookModal) closeModal();
+        };
+    </script>
+</body>
+</html>
