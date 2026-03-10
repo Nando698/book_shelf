@@ -130,30 +130,35 @@
         }
 
         function renderGallery(books) {
-            if (!gallery) return;
-            gallery.innerHTML = '';
-            
-            books.forEach(book => {
-                const coverUrl = (book.portada && book.portada !== "Sin imagen") 
-                    ? book.portada.replace("http://", "https://") 
-                    : 'https://via.placeholder.com/180x260?text=Sin+Portada';
-                
-                const authors = Array.isArray(book.autores) ? book.autores.join(', ') : 'Autor desconocido';
-
-                const card = document.createElement('div');
-                card.className = 'book-card bg-white p-3 rounded-2xl shadow-sm cursor-pointer border border-gray-100 flex flex-col';
-                card.innerHTML = `
-                    <div class="aspect-[2/3] overflow-hidden rounded-xl bg-gray-50 mb-4">
-                        <img src="${coverUrl}" alt="${book.titulo}" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <h3 class="text-sm font-bold text-gray-800 line-clamp-2 leading-tight mb-1 grow">${book.titulo}</h3>
-                    <p class="text-[11px] text-gray-500 truncate uppercase tracking-tight font-medium">${authors}</p>
-                `;
-                
-                card.onclick = () => showDetails(book);
-                gallery.appendChild(card);
-            });
-        }
+    if (!gallery) return;
+    gallery.innerHTML = '';
+    
+    books.forEach(book => {
+        const esRegalado = book.estado === "regalado";
+        
+        // Si no tiene imagen, usamos un placeholder
+        const coverUrl = (book.portada && book.portada !== "Sin imagen" && book.portada !== "no_disponible") 
+            ? book.portada.replace("http://", "https://") 
+            : 'https://via.placeholder.com/180x260?text=Sin+Portada';
+        
+        const card = document.createElement('div');
+        // Agregamos clases de opacidad y escala de grises si fue regalado
+        card.className = `book-card bg-white p-3 rounded-2xl shadow-sm cursor-pointer border border-gray-100 flex flex-col 
+                          ${esRegalado ? 'opacity-60 grayscale' : ''}`;
+        
+        card.innerHTML = `
+            <div class="relative aspect-[2/3] overflow-hidden rounded-xl bg-gray-50 mb-4">
+                <img src="${coverUrl}" class="w-full h-full object-cover">
+                ${esRegalado ? '<div class="absolute inset-0 bg-black/20 flex items-center justify-center"><span class="bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">Regalado</span></div>' : ''}
+            </div>
+            <h3 class="text-sm font-bold text-gray-800 line-clamp-2 grow">${book.titulo}</h3>
+            <p class="text-[10px] text-gray-500 uppercase">${book.autores[0] || 'Autor'}</p>
+        `;
+        
+        card.onclick = () => showDetails(book);
+        gallery.appendChild(card);
+    });
+}
 
         function handleSearch(e) {
             const term = e.target.value.toLowerCase().trim();
