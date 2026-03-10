@@ -5,7 +5,8 @@
         "autores": [
             "Rachel Cusk"
         ],
-        "portada": "http://books.google.com/books/content?id=I5Q7vgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=I5Q7vgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786073101493",
@@ -14,7 +15,8 @@
             "Carlos Monsiváis",
             "Juan Carlos Mena"
         ],
-        "portada": "http://books.google.com/books/content?id=emJDAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=emJDAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789686941722",
@@ -22,7 +24,8 @@
         "autores": [
             "Jorge Volpi Escalante"
         ],
-        "portada": "https://books.google.com/books/content?id=TwEfAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=TwEfAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9780764979873",
@@ -30,7 +33,8 @@
         "autores": [
             "Jennifer Marjorie Bosch"
         ],
-        "portada": "http://books.google.com/books/content?id=AIAStAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=AIAStAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504914723",
@@ -38,7 +42,8 @@
         "autores": [
             "Guillermo Martínez"
         ],
-        "portada": "http://books.google.com/books/content?id=A-UmAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=A-UmAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789870413622",
@@ -46,7 +51,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "https://books.google.com/books/content?id=GUztzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=GUztzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871210466",
@@ -54,7 +60,8 @@
         "autores": [
             "Leonardo Padura"
         ],
-        "portada": "https://books.google.com/books/content?id=2kTmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=2kTmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788484504740",
@@ -64,7 +71,8 @@
             "Robert Shekter",
             "Panchita Llona"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789707702004",
@@ -72,7 +80,8 @@
         "autores": [
             "Alonso Sánchez Baute"
         ],
-        "portada": "https://books.google.com/books/content?id=UcY0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=UcY0DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789686005660",
@@ -80,7 +89,8 @@
         "autores": [
             "Octavio Paz"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433968012",
@@ -88,7 +98,8 @@
         "autores": [
             "Julian Barnes"
         ],
-        "portada": "http://books.google.com/books/content?id=tQXBAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=tQXBAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433981219",
@@ -96,7 +107,8 @@
         "autores": [
             "Michel Houellebecq"
         ],
-        "portada": "http://books.google.com/books/content?id=w2BGzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=w2BGzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507314926",
@@ -104,7 +116,8 @@
         "autores": [
             "Ernesto Sábato"
         ],
-        "portada": "https://books.google.com/books/content?id=GsAXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=GsAXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507427695",
@@ -113,7 +126,8 @@
             "Pablo Neruda",
             "Rafael Alberti"
         ],
-        "portada": "https://books.google.com/books/content?id=bwu-CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=bwu-CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507222115",
@@ -121,7 +135,8 @@
         "autores": [
             "da Vinci Leonardo"
         ],
-        "portada": "https://books.google.com/books/content?id=r7TtAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=r7TtAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788496136595",
@@ -129,7 +144,8 @@
         "autores": [
             "Stefan Zweig"
         ],
-        "portada": "http://books.google.com/books/content?id=LIvFPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=LIvFPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789501522587",
@@ -137,7 +153,8 @@
         "autores": [
             "Jorge Lanata"
         ],
-        "portada": "http://books.google.com/books/content?id=HgbjAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=HgbjAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871210886",
@@ -145,7 +162,8 @@
         "autores": [
             "Henning Mankell"
         ],
-        "portada": "https://books.google.com/books/content?id=Uw052vIp4j4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=Uw052vIp4j4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789870436270",
@@ -153,7 +171,8 @@
         "autores": [
             "Javier Marías"
         ],
-        "portada": "https://books.google.com/books/content?id=qf_4AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=qf_4AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788471662613",
@@ -161,7 +180,8 @@
         "autores": [
             "Friedrich Nietzsche"
         ],
-        "portada": "http://books.google.com/books/content?id=5yxh6QVhHUoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=5yxh6QVhHUoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789684111813",
@@ -169,7 +189,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "http://books.google.com/books/content?id=trASAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=trASAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788417977825",
@@ -177,7 +198,8 @@
         "autores": [
             "Agota Kristof"
         ],
-        "portada": "http://books.google.com/books/content?id=N8HUzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=N8HUzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789685146463",
@@ -185,7 +207,8 @@
         "autores": [
             "Hermann Hesse"
         ],
-        "portada": "https://books.google.com/books/content?id=flygEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=flygEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789870419730",
@@ -193,7 +216,8 @@
         "autores": [
             "Marcelo Cohen"
         ],
-        "portada": "https://books.google.com/books/content?id=cDm1Lwj8T3IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=cDm1Lwj8T3IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504913504",
@@ -201,7 +225,8 @@
         "autores": [
             "Alejandro Dolina"
         ],
-        "portada": "http://books.google.com/books/content?id=1UdlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=1UdlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788478951246",
@@ -209,7 +234,8 @@
         "autores": [
             "Dan Franck"
         ],
-        "portada": "http://books.google.com/books/content?id=29QOAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=29QOAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483106280",
@@ -217,7 +243,8 @@
         "autores": [
             "María Esther Vázquez"
         ],
-        "portada": "http://books.google.com/books/content?id=P0sOAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=P0sOAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789870409526",
@@ -226,7 +253,8 @@
             "Ricardo Watson",
             "Lucas Rentero"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500427456",
@@ -234,7 +262,8 @@
         "autores": [
             "John Cheever"
         ],
-        "portada": "http://books.google.com/books/content?id=gAH_kQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=gAH_kQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877693645",
@@ -242,7 +271,8 @@
         "autores": [
             "María Negroni"
         ],
-        "portada": "https://books.google.com/books/content?id=91UOEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=91UOEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789870413318",
@@ -250,7 +280,8 @@
         "autores": [
             "Marcelo Cohen"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789876283489",
@@ -258,7 +289,8 @@
         "autores": [
             "Autor desconocido"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789872514020",
@@ -266,7 +298,8 @@
         "autores": [
             "Juan Carlos Martini"
         ],
-        "portada": "http://books.google.com/books/content?id=cZNUtP9a2XEC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=cZNUtP9a2XEC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433970831",
@@ -276,7 +309,8 @@
             "Paul Karasik",
             "David Mazzucchelli"
         ],
-        "portada": "http://books.google.com/books/content?id=E4rZAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=E4rZAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788478445455",
@@ -284,7 +318,8 @@
         "autores": [
             "Italo Calvino"
         ],
-        "portada": "http://books.google.com/books/content?id=JkmQOwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=JkmQOwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789876706285",
@@ -292,7 +327,8 @@
         "autores": [
             "Leonardo Padura"
         ],
-        "portada": "https://books.google.com/books/content?id=aMLyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=aMLyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786078969623",
@@ -300,7 +336,8 @@
         "autores": [
             "Carmen Boullosa"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788441407039",
@@ -308,7 +345,8 @@
         "autores": [
             "Julián Moreiro"
         ],
-        "portada": "http://books.google.com/books/content?id=Avi6Ub89KhAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Avi6Ub89KhAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504922568",
@@ -316,7 +354,8 @@
         "autores": [
             "Guillermo Martínez"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789505151547",
@@ -324,7 +363,8 @@
         "autores": [
             "Rodolfo J. Walsh"
         ],
-        "portada": "http://books.google.com/books/content?id=fW4sAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=fW4sAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789874198075",
@@ -332,7 +372,8 @@
         "autores": [
             "Mercedes Calero (Editor)"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789876281294",
@@ -340,7 +381,8 @@
         "autores": [
             "Graham Greene"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507313219",
@@ -348,7 +390,8 @@
         "autores": [
             "Juan José Saer"
         ],
-        "portada": "http://books.google.com/books/content?id=KrZfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=KrZfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875780651",
@@ -356,7 +399,8 @@
         "autores": [
             "Julio Cortázar"
         ],
-        "portada": "http://books.google.com/books/content?id=oi43twAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=oi43twAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875780668",
@@ -364,7 +408,8 @@
         "autores": [
             "Julio Cortázar"
         ],
-        "portada": "http://books.google.com/books/content?id=Kf2AjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Kf2AjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789872514051",
@@ -372,7 +417,8 @@
         "autores": [
             "Felisberto Hernández"
         ],
-        "portada": "http://books.google.com/books/content?id=xFksAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=xFksAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788420634159",
@@ -380,7 +426,8 @@
         "autores": [
             "Edgar Allan Poe"
         ],
-        "portada": "http://books.google.com/books/content?id=varSwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=varSwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788426416131",
@@ -388,7 +435,8 @@
         "autores": [
             "Ernest Hemingway"
         ],
-        "portada": "http://books.google.com/books/content?id=7miREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=7miREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786078126064",
@@ -396,7 +444,8 @@
         "autores": [
             "Álvaro Enrigue"
         ],
-        "portada": "https://books.google.com/books/content?id=Hz4DW5R55UYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=Hz4DW5R55UYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500715430",
@@ -404,7 +453,8 @@
         "autores": [
             "Graham Greene"
         ],
-        "portada": "https://books.google.com/books/content?id=OLT9hJ1oTF8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=OLT9hJ1oTF8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788471662644",
@@ -412,7 +462,8 @@
         "autores": [
             "Arthur Schopenhauer"
         ],
-        "portada": "http://books.google.com/books/content?id=9kRXvtDuc90C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=9kRXvtDuc90C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788435008419",
@@ -420,7 +471,8 @@
         "autores": [
             "Thomas Keneally"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875802087",
@@ -428,7 +480,8 @@
         "autores": [
             "Manuel Puig"
         ],
-        "portada": "https://books.google.com/books/content?id=0BI7DQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=0BI7DQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507320552",
@@ -436,7 +489,8 @@
         "autores": [
             "Antonio Soler"
         ],
-        "portada": "http://books.google.com/books/content?id=pFmZoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=pFmZoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789506202781",
@@ -444,7 +498,8 @@
         "autores": [
             "Gilbert Keith Chesterton"
         ],
-        "portada": "https://books.google.com/books/content?id=5u23EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=5u23EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788492915347",
@@ -452,7 +507,8 @@
         "autores": [
             "Ruth Rendell"
         ],
-        "portada": "http://books.google.com/books/content?id=fTQ3nwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=fTQ3nwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433968845",
@@ -460,7 +516,8 @@
         "autores": [
             "Juan Villoro"
         ],
-        "portada": "http://books.google.com/books/content?id=cjHmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=cjHmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789706991416",
@@ -468,7 +525,8 @@
         "autores": [
             "David Toscana"
         ],
-        "portada": "http://books.google.com/books/content?id=OjZlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=OjZlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789501501575",
@@ -477,7 +535,8 @@
             "Morris West",
             "Carlos Vega"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500402453",
@@ -485,7 +544,8 @@
         "autores": [
             "Albert Camus"
         ],
-        "portada": "https://books.google.com/books/content?id=eicMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=eicMEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483109984",
@@ -493,7 +553,8 @@
         "autores": [
             "Georges Simenon"
         ],
-        "portada": "http://books.google.com/books/content?id=unJ3PAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=unJ3PAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789561311930",
@@ -501,7 +562,8 @@
         "autores": [
             "Clive Staples Lewis"
         ],
-        "portada": "http://books.google.com/books/content?id=bFqme9BfgdQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=bFqme9BfgdQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877181623",
@@ -509,7 +571,8 @@
         "autores": [
             "F. Scott Fitzgerald"
         ],
-        "portada": "http://books.google.com/books/content?id=EImUjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=EImUjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433975416",
@@ -517,7 +580,8 @@
         "autores": [
             "Patrick Modiano"
         ],
-        "portada": "http://books.google.com/books/content?id=-kW0cQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=-kW0cQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433902351",
@@ -525,7 +589,8 @@
         "autores": [
             "Bernhard Schlink"
         ],
-        "portada": "http://books.google.com/books/content?id=y30rxwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=y30rxwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789587584837",
@@ -533,7 +598,8 @@
         "autores": [
             "Tomás González"
         ],
-        "portada": "https://books.google.com/books/content?id=qsG61Z16PnkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=qsG61Z16PnkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788472239722",
@@ -542,7 +608,8 @@
             "Milan Kundera",
             "Fernando de Valenzuela"
         ],
-        "portada": "http://books.google.com/books/content?id=PugmcAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=PugmcAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789681678951",
@@ -550,7 +617,8 @@
         "autores": [
             "Josefina Vicens"
         ],
-        "portada": "http://books.google.com/books/content?id=vsx0FoAImnQC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=vsx0FoAImnQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789685208581",
@@ -558,7 +626,8 @@
         "autores": [
             "Juan Rulfo"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433972903",
@@ -566,7 +635,8 @@
         "autores": [
             "Enrique Vila-Matas"
         ],
-        "portada": "http://books.google.com/books/content?id=TnZSPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=TnZSPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433975683",
@@ -574,7 +644,8 @@
         "autores": [
             "Michel Houellebecq"
         ],
-        "portada": "http://books.google.com/books/content?id=PhMCywAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=PhMCywAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483076033",
@@ -582,7 +653,8 @@
         "autores": [
             "J. E. Ruiz Doménec"
         ],
-        "portada": "http://books.google.com/books/content?id=RtARAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=RtARAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788401497438",
@@ -590,7 +662,8 @@
         "autores": [
             "Morris West"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788426411488",
@@ -598,7 +671,8 @@
         "autores": [
             "Umberto Eco"
         ],
-        "portada": "https://books.google.com/books/content?id=PAf1twEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=PAf1twEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433968524",
@@ -606,7 +680,8 @@
         "autores": [
             "Alan Pauls"
         ],
-        "portada": "http://books.google.com/books/content?id=krRfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=krRfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433971012",
@@ -614,7 +689,8 @@
         "autores": [
             "Julian Barnes"
         ],
-        "portada": "http://books.google.com/books/content?id=OtohAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=OtohAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500401005",
@@ -622,7 +698,8 @@
         "autores": [
             "Antoine de Saint-Exupéry"
         ],
-        "portada": "https://books.google.com/books/content?id=lildEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=lildEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507398896",
@@ -630,7 +707,8 @@
         "autores": [
             "Franz Kafka"
         ],
-        "portada": "http://books.google.com/books/content?id=EVXWwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=EVXWwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433997760",
@@ -638,7 +716,8 @@
         "autores": [
             "Alan Pauls"
         ],
-        "portada": "http://books.google.com/books/content?id=XIHOoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=XIHOoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789870425281",
@@ -646,7 +725,8 @@
         "autores": [
             "William Faulkner"
         ],
-        "portada": "https://books.google.com/books/content?id=dXdMTvBzlpkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=dXdMTvBzlpkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433971432",
@@ -654,7 +734,8 @@
         "autores": [
             "Roberto Bolaño"
         ],
-        "portada": "http://books.google.com/books/content?id=L-dpAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=L-dpAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871210138",
@@ -662,7 +743,8 @@
         "autores": [
             "Milan Kundera"
         ],
-        "portada": "https://books.google.com/books/content?id=EIymOgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=EIymOgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483100035",
@@ -670,7 +752,8 @@
         "autores": [
             "Andreï Makine"
         ],
-        "portada": "http://books.google.com/books/content?id=iy__AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=iy__AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786075025025",
@@ -679,7 +762,8 @@
             "Angélica Abelleyra",
             "Dabi Xavier"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789506446888",
@@ -687,7 +771,8 @@
         "autores": [
             "Gabriela Exilart"
         ],
-        "portada": "https://books.google.com/books/content?id=YS_PEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=YS_PEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789879397367",
@@ -695,7 +780,8 @@
         "autores": [
             "J. M. Coetzee"
         ],
-        "portada": "http://books.google.com/books/content?id=JSVFPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=JSVFPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433911148",
@@ -703,7 +789,8 @@
         "autores": [
             "Julian Barnes"
         ],
-        "portada": "http://books.google.com/books/content?id=hua5zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=hua5zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433974860",
@@ -711,7 +798,8 @@
         "autores": [
             "Patrick Modiano"
         ],
-        "portada": "http://books.google.com/books/content?id=IS9tPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=IS9tPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871210084",
@@ -719,7 +807,8 @@
         "autores": [
             "Andreï Makine"
         ],
-        "portada": "http://books.google.com/books/content?id=vmzMAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=vmzMAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871210299",
@@ -727,7 +816,8 @@
         "autores": [
             "Marguerite Duras"
         ],
-        "portada": "http://books.google.com/books/content?id=OqCVAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=OqCVAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433972149",
@@ -735,7 +825,8 @@
         "autores": [
             "Daniel Sada"
         ],
-        "portada": "http://books.google.com/books/content?id=1UDVcQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=1UDVcQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788432234897",
@@ -743,7 +834,8 @@
         "autores": [
             "Enrique Vila-Matas"
         ],
-        "portada": "https://books.google.com/books/content?id=Cm-REAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=Cm-REAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433976550",
@@ -751,7 +843,8 @@
         "autores": [
             "Ian McEwan"
         ],
-        "portada": "http://books.google.com/books/content?id=K6oZkgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=K6oZkgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786073806251",
@@ -759,7 +852,8 @@
         "autores": [
             "Héctor Aguilar Camín"
         ],
-        "portada": "http://books.google.com/books/content?id=4leREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=4leREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504935537",
@@ -767,7 +861,8 @@
         "autores": [
             "Guillermo Martínez"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788495587107",
@@ -775,7 +870,8 @@
         "autores": [
             "Honoré de Balzac"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875662308",
@@ -783,7 +879,8 @@
         "autores": [
             "Ernest Hemingway"
         ],
-        "portada": "http://books.google.com/books/content?id=aimePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=aimePwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789688673324",
@@ -791,7 +888,8 @@
         "autores": [
             "Virginia Woolf"
         ],
-        "portada": "https://books.google.com/books/content?id=Hr2zswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=Hr2zswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500427814",
@@ -799,7 +897,8 @@
         "autores": [
             "José María Brindisi"
         ],
-        "portada": "http://books.google.com/books/content?id=14ZlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=14ZlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500434034",
@@ -807,7 +906,8 @@
         "autores": [
             "Juan Forn"
         ],
-        "portada": "https://books.google.com/books/content?id=k1-JPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=k1-JPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871739141",
@@ -815,7 +915,8 @@
         "autores": [
             "Arthur Machen"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871556083",
@@ -825,7 +926,8 @@
             "Florencia Garramuño",
             "Claudia Solans"
         ],
-        "portada": "http://books.google.com/books/content?id=IL8FkgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=IL8FkgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433909480",
@@ -833,7 +935,8 @@
         "autores": [
             "Enrique Vila-Matas"
         ],
-        "portada": "http://books.google.com/books/content?id=V1dfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=V1dfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871544493",
@@ -841,7 +944,8 @@
         "autores": [
             "Leonardo Padura"
         ],
-        "portada": "https://books.google.com/books/content?id=uern0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=uern0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788417977429",
@@ -849,7 +953,8 @@
         "autores": [
             "Per Petterson"
         ],
-        "portada": "https://books.google.com/books/content?id=B6j7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=B6j7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788416830732",
@@ -857,7 +962,8 @@
         "autores": [
             "Eva Marie Liffner"
         ],
-        "portada": "http://books.google.com/books/content?id=Lqg7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Lqg7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875454712",
@@ -865,7 +971,8 @@
         "autores": [
             "Oliverio Coelho"
         ],
-        "portada": "http://books.google.com/books/content?id=5IgdAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=5IgdAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504905578",
@@ -875,7 +982,8 @@
             "Graciela Gliemmo",
             "Diana Paris"
         ],
-        "portada": "https://books.google.com/books/content?id=g19fAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=g19fAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789705800061",
@@ -883,7 +991,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "http://books.google.com/books/content?id=RQbQQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=RQbQQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433998163",
@@ -891,7 +1000,8 @@
         "autores": [
             "Anna Ballbona"
         ],
-        "portada": "http://books.google.com/books/content?id=0XsWDAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=0XsWDAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871677818",
@@ -900,7 +1010,8 @@
             "Jorge Rachid",
             "Marcelo Moyano"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877690248",
@@ -908,7 +1019,8 @@
         "autores": [
             "Samanta Schweblin"
         ],
-        "portada": "https://books.google.com/books/content?id=9KYtvAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=9KYtvAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786074213133",
@@ -916,7 +1028,8 @@
         "autores": [
             "Banana Yoshimoto"
         ],
-        "portada": "https://books.google.com/books/content?id=ztRaAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=ztRaAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789974811812",
@@ -924,7 +1037,8 @@
         "autores": [
             "Juan Villoro"
         ],
-        "portada": "http://books.google.com/books/content?id=z_4eAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=z_4eAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500427555",
@@ -932,7 +1046,8 @@
         "autores": [
             "Yasunari Kawabata"
         ],
-        "portada": "https://books.google.com/books/content?id=07QdEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=07QdEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433966568",
@@ -940,7 +1055,8 @@
         "autores": [
             "John Kennedy Toole"
         ],
-        "portada": "http://books.google.com/books/content?id=_C0MAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=_C0MAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788498383034",
@@ -948,7 +1064,8 @@
         "autores": [
             "Herman Koch"
         ],
-        "portada": "http://books.google.com/books/content?id=XzkXcgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=XzkXcgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433920423",
@@ -958,7 +1075,8 @@
             "José Manuel Álvarez Flórez",
             "Angela Pérez"
         ],
-        "portada": "http://books.google.com/books/content?id=GkufQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=GkufQwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871544080",
@@ -966,7 +1084,8 @@
         "autores": [
             "Jean-Marie Gustave Le Clézio"
         ],
-        "portada": "https://books.google.com/books/content?id=XryjcQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=XryjcQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788472238626",
@@ -974,7 +1093,8 @@
         "autores": [
             "Edith Wharton"
         ],
-        "portada": "http://books.google.com/books/content?id=-qn3RwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=-qn3RwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500427890",
@@ -983,7 +1103,8 @@
             "Silvia Hopenhayn",
             "Jorge Menéndez"
         ],
-        "portada": "http://books.google.com/books/content?id=JOpIAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=JOpIAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789708120357",
@@ -991,7 +1112,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "http://books.google.com/books/content?id=oncOPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=oncOPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877120738",
@@ -999,7 +1121,8 @@
         "autores": [
             "Autor desconocido"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788493711054",
@@ -1007,7 +1130,8 @@
         "autores": [
             "Eudora Welty"
         ],
-        "portada": "http://books.google.com/books/content?id=FF-2cQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=FF-2cQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483100585",
@@ -1016,7 +1140,8 @@
             "Milan Kundera",
             "Beatriz de Moura"
         ],
-        "portada": "http://books.google.com/books/content?id=JkhOPAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=JkhOPAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483108871",
@@ -1024,7 +1149,8 @@
         "autores": [
             "Milan Kundera"
         ],
-        "portada": "http://books.google.com/books/content?id=D2cscAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=D2cscAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789509779662",
@@ -1032,7 +1158,8 @@
         "autores": [
             "Milan Kundera"
         ],
-        "portada": "http://books.google.com/books/content?id=FufBAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=FufBAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433972736",
@@ -1040,7 +1167,8 @@
         "autores": [
             "Julian Barnes"
         ],
-        "portada": "http://books.google.com/books/content?id=9Y_RGAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=9Y_RGAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500716178",
@@ -1048,7 +1176,8 @@
         "autores": [
             "Simone de Beauvoir"
         ],
-        "portada": "http://books.google.com/books/content?id=ornwRAKPQm8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=ornwRAKPQm8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789876092562",
@@ -1056,7 +1185,8 @@
         "autores": [
             "WILLIAM FAULKNER"
         ],
-        "portada": "https://books.google.com/books/content?id=hS8LzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=hS8LzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875801387",
@@ -1064,7 +1194,8 @@
         "autores": [
             "Juan Jose Saer"
         ],
-        "portada": "http://books.google.com/books/content?id=t8ebNAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=t8ebNAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789681677886",
@@ -1072,7 +1203,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "http://books.google.com/books/content?id=46L8wAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=46L8wAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507865381",
@@ -1080,7 +1212,8 @@
         "autores": [
             "Christopher Marlowe"
         ],
-        "portada": "http://books.google.com/books/content?id=dn46Dcw_TK4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=dn46Dcw_TK4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788498388800",
@@ -1088,7 +1221,8 @@
         "autores": [
             "Laetitia Colombani"
         ],
-        "portada": "http://books.google.com/books/content?id=MnaREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=MnaREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433906991",
@@ -1096,7 +1230,8 @@
         "autores": [
             "Paul Auster"
         ],
-        "portada": "http://books.google.com/books/content?id=ZATDSQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=ZATDSQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786077341581",
@@ -1105,7 +1240,8 @@
             "Alberto Tovalin Ahumada",
             "José Antonio Rodriguez"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789706990655",
@@ -1113,7 +1249,8 @@
         "autores": [
             "Francisco Hinojosa"
         ],
-        "portada": "http://books.google.com/books/content?id=JCNfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=JCNfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507312724",
@@ -1121,7 +1258,8 @@
         "autores": [
             "Milan Kundera"
         ],
-        "portada": "https://books.google.com/books/content?id=5LfOAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=5LfOAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789684114432",
@@ -1129,7 +1267,8 @@
         "autores": [
             "Armando Pereira"
         ],
-        "portada": "http://books.google.com/books/content?id=M1RLzozwc-QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=M1RLzozwc-QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9783822835333",
@@ -1137,7 +1276,8 @@
         "autores": [
             "Jean-Louis Cohen"
         ],
-        "portada": "http://books.google.com/books/content?id=2ZFZPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=2ZFZPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789872483036",
@@ -1145,7 +1285,8 @@
         "autores": [
             "Fabio Morábito"
         ],
-        "portada": "http://books.google.com/books/content?id=toGQZwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=toGQZwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789974908925",
@@ -1153,7 +1294,8 @@
         "autores": [
             "Ida Vitale"
         ],
-        "portada": "https://books.google.com/books/content?id=-qagAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=-qagAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9783836531733",
@@ -1162,7 +1304,8 @@
             "Barbara Stoeltie",
             "Angelika Taschen"
         ],
-        "portada": "http://books.google.com/books/content?id=lCkvKQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=lCkvKQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871180400",
@@ -1170,7 +1313,8 @@
         "autores": [
             "Juan Villoro"
         ],
-        "portada": "http://books.google.com/books/content?id=GjLmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=GjLmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786074110142",
@@ -1178,7 +1322,8 @@
         "autores": [
             "Juan Villoro"
         ],
-        "portada": "https://books.google.com/books/content?id=CP8eAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=CP8eAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789687711416",
@@ -1186,7 +1331,8 @@
         "autores": [
             "Carlos Monsiváis"
         ],
-        "portada": "https://books.google.com/books/content?id=FdzRMloT5N8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=FdzRMloT5N8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788466306539",
@@ -1194,7 +1340,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "http://books.google.com/books/content?id=7MSpQQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=7MSpQQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789501514681",
@@ -1202,7 +1349,8 @@
         "autores": [
             "Morris L. West"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789686941623",
@@ -1210,7 +1358,8 @@
         "autores": [
             "Carlos Fuentes"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433981080",
@@ -1218,7 +1367,8 @@
         "autores": [
             "Bernhard Schlink"
         ],
-        "portada": "http://books.google.com/books/content?id=qDzczgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=qDzczgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871180523",
@@ -1226,7 +1376,8 @@
         "autores": [
             "Juan Villoro"
         ],
-        "portada": "https://books.google.com/books/content?id=BjHmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=BjHmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789688107355",
@@ -1234,7 +1385,8 @@
         "autores": [
             "María Cecilia Zuleta"
         ],
-        "portada": "http://books.google.com/books/content?id=Jd86AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Jd86AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483100813",
@@ -1242,7 +1394,8 @@
         "autores": [
             "Georges Simenon"
         ],
-        "portada": "http://books.google.com/books/content?id=bhjNAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=bhjNAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433968838",
@@ -1250,7 +1403,8 @@
         "autores": [
             "Sergio Pitol"
         ],
-        "portada": "http://books.google.com/books/content?id=1jHmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=1jHmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788420482453",
@@ -1258,7 +1412,8 @@
         "autores": [
             "Manuel Vicent"
         ],
-        "portada": "http://books.google.com/books/content?id=WW5fAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=WW5fAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788415130352",
@@ -1266,7 +1421,8 @@
         "autores": [
             "Muriel Spark"
         ],
-        "portada": "http://books.google.com/books/content?id=tbHINAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=tbHINAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483109144",
@@ -1275,7 +1431,8 @@
             "Milan Kundera",
             "Beatriz de Moura"
         ],
-        "portada": "http://books.google.com/books/content?id=Q9B-OwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Q9B-OwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9504911102",
@@ -1283,7 +1440,8 @@
         "autores": [
             "Félix Luna"
         ],
-        "portada": "https://books.google.com/books/content?id=uxfjAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=uxfjAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789505117574",
@@ -1291,7 +1449,8 @@
         "autores": [
             "Héctor Tizón"
         ],
-        "portada": "http://books.google.com/books/content?id=WO5pQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=WO5pQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433998057",
@@ -1299,7 +1458,8 @@
         "autores": [
             "Sara Mesa"
         ],
-        "portada": "http://books.google.com/books/content?id=AkpQjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=AkpQjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788495971814",
@@ -1307,7 +1467,8 @@
         "autores": [
             "Almudena Grandes"
         ],
-        "portada": "http://books.google.com/books/content?id=6B1DPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=6B1DPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433535122",
@@ -1315,7 +1476,8 @@
         "autores": [
             "André Breton"
         ],
-        "portada": "https://books.google.com/books/content?id=BFZrAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=BFZrAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500429092",
@@ -1323,7 +1485,8 @@
         "autores": [
             "Edgardo Cozarinsky"
         ],
-        "portada": "http://books.google.com/books/content?id=1FNlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=1FNlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877381863",
@@ -1331,7 +1494,8 @@
         "autores": [
             "Lucia Berlin"
         ],
-        "portada": "https://books.google.com/books/content?id=2PuKCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=2PuKCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788498381764",
@@ -1339,7 +1503,8 @@
         "autores": [
             "Nancy Huston"
         ],
-        "portada": "http://books.google.com/books/content?id=XhDhPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=XhDhPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788426421395",
@@ -1347,7 +1512,8 @@
         "autores": [
             "Alice Munro"
         ],
-        "portada": "http://books.google.com/books/content?id=VpptmgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=VpptmgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877387827",
@@ -1355,7 +1521,8 @@
         "autores": [
             "Rodolfo Enrique Fogwill"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483106020",
@@ -1363,7 +1530,8 @@
         "autores": [
             "Almudena Grandes"
         ],
-        "portada": "http://books.google.com/books/content?id=ffheAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=ffheAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786079278786",
@@ -1371,7 +1539,8 @@
         "autores": [
             "Octavio Paz"
         ],
-        "portada": "https://books.google.com/books/content?id=OX4zAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=OX4zAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9782711836550",
@@ -1379,7 +1548,8 @@
         "autores": [
             "Hélène Seckel"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788476098707",
@@ -1387,7 +1557,8 @@
         "autores": [
             "Autor desconocido"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788419089052",
@@ -1395,7 +1566,8 @@
         "autores": [
             "Nora Ephron"
         ],
-        "portada": "http://books.google.com/books/content?id=YPpPzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=YPpPzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788420470566",
@@ -1403,7 +1575,8 @@
         "autores": [
             "Jorge Volpi Escalante"
         ],
-        "portada": "http://books.google.com/books/content?id=vzvmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=vzvmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877381887",
@@ -1411,7 +1584,8 @@
         "autores": [
             "EDUARDO SACHERI"
         ],
-        "portada": "https://books.google.com/books/content?id=QtYWDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=QtYWDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9781984822185",
@@ -1419,7 +1593,8 @@
         "autores": [
             "Sally Rooney"
         ],
-        "portada": "http://books.google.com/books/content?id=vrpPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=vrpPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789874159427",
@@ -1427,7 +1602,8 @@
         "autores": [
             "Hebe Uhart"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789509009059",
@@ -1435,7 +1611,8 @@
         "autores": [
             "Jerome David Salinger"
         ],
-        "portada": "https://books.google.com/books/content?id=3s1QPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=3s1QPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433972811",
@@ -1443,7 +1620,8 @@
         "autores": [
             "Quim Monzó"
         ],
-        "portada": "http://books.google.com/books/content?id=jVOxGQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=jVOxGQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433980397",
@@ -1451,7 +1629,8 @@
         "autores": [
             "Bernhard Schlink"
         ],
-        "portada": "http://books.google.com/books/content?id=5oY0xQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=5oY0xQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483831441",
@@ -1459,7 +1638,8 @@
         "autores": [
             "Jean-Marie Gustave Le Clézio"
         ],
-        "portada": "http://books.google.com/books/content?id=trx0PwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=trx0PwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500729314",
@@ -1467,7 +1647,8 @@
         "autores": [
             "Juan Sasturain"
         ],
-        "portada": "http://books.google.com/books/content?id=YE8cAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=YE8cAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9783836507752",
@@ -1475,7 +1656,8 @@
         "autores": [
             "Christiane Reiter"
         ],
-        "portada": "http://books.google.com/books/content?id=COP7OAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=COP7OAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789505576289",
@@ -1483,7 +1665,8 @@
         "autores": [
             "Paula Bruno"
         ],
-        "portada": "http://books.google.com/books/content?id=vRluAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=vRluAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788419243324",
@@ -1491,7 +1674,8 @@
         "autores": [
             "Autor desconocido"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788476694701",
@@ -1499,7 +1683,8 @@
         "autores": [
             "Colum McCann"
         ],
-        "portada": "http://books.google.com/books/content?id=LWhEAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=LWhEAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788488730022",
@@ -1507,7 +1692,8 @@
         "autores": [
             "Jane Austen"
         ],
-        "portada": "http://books.google.com/books/content?id=JBSsPAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=JBSsPAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871768011",
@@ -1515,7 +1701,8 @@
         "autores": [
             "José María Brindisi"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433967664",
@@ -1523,7 +1710,8 @@
         "autores": [
             "Michel Houellebecq"
         ],
-        "portada": "http://books.google.com/books/content?id=sQmOPAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=sQmOPAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788417007584",
@@ -1531,7 +1719,8 @@
         "autores": [
             "Rachel Cusk"
         ],
-        "portada": "http://books.google.com/books/content?id=zhtxuwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=zhtxuwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871772216",
@@ -1539,7 +1728,8 @@
         "autores": [
             "Patrick Modiano"
         ],
-        "portada": "http://books.google.com/books/content?id=C5iAMAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=C5iAMAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433971609",
@@ -1547,7 +1737,8 @@
         "autores": [
             "Ricardo Piglia"
         ],
-        "portada": "http://books.google.com/books/content?id=Bj9NPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Bj9NPgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433914835",
@@ -1555,7 +1746,8 @@
         "autores": [
             "Raymond Carver"
         ],
-        "portada": "http://books.google.com/books/content?id=pI0URAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=pI0URAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877382570",
@@ -1563,7 +1755,8 @@
         "autores": [
             "Julio Cortázar"
         ],
-        "portada": "https://books.google.com/books/content?id=xM9bH5JADdsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=xM9bH5JADdsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789707310339",
@@ -1571,7 +1764,8 @@
         "autores": [
             "Antonio Velasco Piña"
         ],
-        "portada": "https://books.google.com/books/content?id=elOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=elOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433914828",
@@ -1579,7 +1773,8 @@
         "autores": [
             "Antonio Tabucchi"
         ],
-        "portada": "http://books.google.com/books/content?id=w--sSAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=w--sSAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788426316387",
@@ -1588,7 +1783,8 @@
             "Gustavo Adolfo Bécquer",
             "Juan María Marín Martínez"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875001053",
@@ -1596,7 +1792,8 @@
         "autores": [
             "Éric Marty"
         ],
-        "portada": "http://books.google.com/books/content?id=7tkVBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=7tkVBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507426513",
@@ -1604,7 +1801,8 @@
         "autores": [
             "Tomás Eloy Martínez"
         ],
-        "portada": "http://books.google.com/books/content?id=b9NIAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=b9NIAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507542671",
@@ -1613,7 +1811,8 @@
             "Emanuel Galli",
             "Rocambole"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433931580",
@@ -1621,7 +1820,8 @@
         "autores": [
             "Eric Rohmer"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788477651604",
@@ -1629,7 +1829,8 @@
         "autores": [
             "Dan Franck"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433980229",
@@ -1637,7 +1838,8 @@
         "autores": [
             "Michel Houellebecq"
         ],
-        "portada": "http://books.google.com/books/content?id=1rKPwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=1rKPwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871081332",
@@ -1645,7 +1847,8 @@
         "autores": [
             "Marcel Proust"
         ],
-        "portada": "http://books.google.com/books/content?id=yxDIW_EC5X0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=yxDIW_EC5X0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789505157525",
@@ -1653,7 +1856,8 @@
         "autores": [
             "Maitena"
         ],
-        "portada": "http://books.google.com/books/content?id=uqt8AQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=uqt8AQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789688678312",
@@ -1661,7 +1865,8 @@
         "autores": [
             "Juan Pablo Villalobos"
         ],
-        "portada": "https://books.google.com/books/content?id=HGnkBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=HGnkBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786074110104",
@@ -1669,7 +1874,8 @@
         "autores": [
             "Guillermo J. Fadanelli"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504982067",
@@ -1677,7 +1883,8 @@
         "autores": [
             "Carlos Maslatón"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9786313011827",
@@ -1685,7 +1892,8 @@
         "autores": [
             "Juan Sasturain"
         ],
-        "portada": "https://books.google.com/books/content?id=FWJYEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=FWJYEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507316487",
@@ -1693,7 +1901,8 @@
         "autores": [
             "Juan José Becerra"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789706990686",
@@ -1701,7 +1910,8 @@
         "autores": [
             "Luis Felipe G. Lomelí"
         ],
-        "portada": "http://books.google.com/books/content?id=YoRdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=YoRdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9786073133531",
@@ -1709,7 +1919,8 @@
         "autores": [
             "Mario Benedetti"
         ],
-        "portada": "https://books.google.com/books/content?id=6E_tAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=6E_tAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433972637",
@@ -1717,7 +1928,8 @@
         "autores": [
             "Antonio Tabucchi"
         ],
-        "portada": "http://books.google.com/books/content?id=-PDrAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=-PDrAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789877384581",
@@ -1725,7 +1937,8 @@
         "autores": [
             "Juan Sasturain"
         ],
-        "portada": "https://books.google.com/books/content?id=9O1oDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=9O1oDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433966926",
@@ -1733,7 +1946,8 @@
         "autores": [
             "Graham Swift"
         ],
-        "portada": "http://books.google.com/books/content?id=SY0oAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=SY0oAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871474486",
@@ -1741,7 +1955,8 @@
         "autores": [
             "Sergio Bizzio"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875663619",
@@ -1749,7 +1964,8 @@
         "autores": [
             "Truman Capote"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433924322",
@@ -1757,7 +1973,8 @@
         "autores": [
             "MARA. GAINZA"
         ],
-        "portada": "http://books.google.com/books/content?id=jRi10AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=jRi10AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788410183391",
@@ -1765,7 +1982,8 @@
         "autores": [
             "Andreas Viestad"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789505151684",
@@ -1773,7 +1991,8 @@
         "autores": [
             "Fontanarrosa"
         ],
-        "portada": "http://books.google.com/books/content?id=BY4dAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=BY4dAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789561312555",
@@ -1781,7 +2000,8 @@
         "autores": [
             "Clive Staples Lewis"
         ],
-        "portada": "http://books.google.com/books/content?id=jgEYAaCDrIgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=jgEYAaCDrIgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789872426699",
@@ -1790,7 +2010,8 @@
             "Mariano Blatt",
             "Damián Ríos"
         ],
-        "portada": "http://books.google.com/books/content?id=lPBHAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=lPBHAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507420641",
@@ -1798,7 +2019,8 @@
         "autores": [
             "Pablo Neruda"
         ],
-        "portada": "https://books.google.com/books/content?id=zeDODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=zeDODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789501516890",
@@ -1806,7 +2028,8 @@
         "autores": [
             "Morris West"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "8402076904",
@@ -1814,7 +2037,8 @@
         "autores": [
             "Honoré de Balzac"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871622221",
@@ -1822,7 +2046,8 @@
         "autores": [
             "Jack Kerouac"
         ],
-        "portada": "http://books.google.com/books/content?id=9qfSoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=9qfSoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789507318009",
@@ -1830,7 +2055,8 @@
         "autores": [
             "Beatriz Sarlo"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500427975",
@@ -1838,7 +2064,8 @@
         "autores": [
             "Mari Akasaka"
         ],
-        "portada": "http://books.google.com/books/content?id=KxvyAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=KxvyAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788418451515",
@@ -1846,7 +2073,8 @@
         "autores": [
             "Knut Hamsun"
         ],
-        "portada": "https://books.google.com/books/content?id=raReEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=raReEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788483831489",
@@ -1854,7 +2082,8 @@
         "autores": [
             "Leonardo Padura"
         ],
-        "portada": "http://books.google.com/books/content?id=Ziw9PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=Ziw9PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789872135874",
@@ -1863,7 +2092,8 @@
             "Marcelo Copello",
             "Marcelo Marchese"
         ],
-        "portada": "http://books.google.com/books/content?id=kxdtAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=kxdtAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500714853",
@@ -1871,7 +2101,8 @@
         "autores": [
             "Rodolfo Enrique Fogwill"
         ],
-        "portada": "http://books.google.com/books/content?id=uR1fAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=uR1fAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9783822858288",
@@ -1879,7 +2110,8 @@
         "autores": [
             "Klaus Honnef"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9789504926375",
@@ -1887,7 +2119,8 @@
         "autores": [
             "Guillermo Martínez"
         ],
-        "portada": "https://books.google.com/books/content?id=C038pwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=C038pwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433980168",
@@ -1895,7 +2128,8 @@
         "autores": [
             "Jenny Erpenbeck"
         ],
-        "portada": "http://books.google.com/books/content?id=imu6ugEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=imu6ugEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788498671094",
@@ -1903,7 +2137,8 @@
         "autores": [
             "COLUM MCCANN"
         ],
-        "portada": "https://books.google.com/books/content?id=O7kUAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=O7kUAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871673018",
@@ -1911,7 +2146,8 @@
         "autores": [
             "Claire Keegan"
         ],
-        "portada": "Sin imagen"
+        "portada": "Sin imagen",
+        "estado": "disponible"
     },
     {
         "isbn": "9788420634166",
@@ -1919,7 +2155,8 @@
         "autores": [
             "Edgar Allan Poe"
         ],
-        "portada": "http://books.google.com/books/content?id=D6XHwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=D6XHwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789875661547",
@@ -1927,7 +2164,8 @@
         "autores": [
             "Truman Capote"
         ],
-        "portada": "http://books.google.com/books/content?id=05HlAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=05HlAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789500745871",
@@ -1935,7 +2173,8 @@
         "autores": [
             "Juan Sasturain"
         ],
-        "portada": "https://books.google.com/books/content?id=29clAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=29clAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788439721246",
@@ -1943,7 +2182,8 @@
         "autores": [
             "Grégoire Bouillier"
         ],
-        "portada": "http://books.google.com/books/content?id=o6rTPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=o6rTPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789682993367",
@@ -1952,7 +2192,8 @@
             "Renato González Mello",
             "José Clemente Orozco"
         ],
-        "portada": "http://books.google.com/books/content?id=SEYuAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=SEYuAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9788433911186",
@@ -1960,7 +2201,8 @@
         "autores": [
             "Patricio Pron"
         ],
-        "portada": "http://books.google.com/books/content?id=seE20AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "http://books.google.com/books/content?id=seE20AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     },
     {
         "isbn": "9789871920976",
@@ -1968,6 +2210,7 @@
         "autores": [
             "Sergio Bizzio"
         ],
-        "portada": "https://books.google.com/books/content?id=yhRJAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "portada": "https://books.google.com/books/content?id=yhRJAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "estado": "disponible"
     }
 ]
